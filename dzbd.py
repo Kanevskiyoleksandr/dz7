@@ -23,17 +23,17 @@ cursor.execute('''CREATE TABLE Position
                                     FOREIGN KEY (id_Employees) REFERENCES Employees(id))''')
 
 
-conn.execute('insert into Employees ( name, surname, phone) values(1, "Evgeniy", "Stupka", +380501112211)')
-conn.execute('insert into Employees ( name, surname, phone) values(1, "Aleksandr", "Gunko", +380507777777)')
-conn.execute('insert into Employees ( name, surname, phone) values(1, "Victor", "Matat", +380502221122)')
+conn.execute('insert into Employees ( name, surname, phone) values( "Evgeniy", "Stupka", +380501112211)')
+conn.execute('insert into Employees ( name, surname, phone) values( "Aleksandr", "Gunko", +380507777777)')
+conn.execute('insert into Employees ( name, surname, phone) values( "Victor", "Matat", +380502221122)')
 conn.commit()
 
-conn.execute('insert into Salary ( Salary, Bonus, Overtime) values(1, "500", "100", 150)')
-conn.execute('insert into Salary ( Salary, Bonus, Overtime) values(1, "100", "20", 40)')
-conn.execute('insert into Salary ( Salary, Bonus, Overtime) values(1, "1000", "500", 2000)')
+conn.execute('insert into Salary ( Salary, Bonus, Overtime) values( "500", "100", 150)')
+conn.execute('insert into Salary ( Salary, Bonus, Overtime) values( "100", "20", 40)')
+conn.execute('insert into Salary ( Salary, Bonus, Overtime) values( "1000", "500", 2000)')
 conn.commit()
 
-conn.execute('insert into Position ( Skill, Position, Education) values(1, "Сounting", "Accountant", Higher)')
-conn.execute('insert into Position ( Skill, Position, Education) values(1, "Coding", "Programmer", Higher)')
-conn.execute('insert into Position ( Skill, Position, Education) values(1, "Sales", "Seller", Secondary)')
+conn.execute('insert into Position ( Skill, Position, Education) values( "Сounting", "Accountant", Higher)')
+conn.execute('insert into Position ( Skill, Position, Education) values( "Coding", "Programmer", Higher)')
+conn.execute('insert into Position ( Skill, Position, Education) values( "Sales", "Seller", Secondary)')
 conn.commit()
